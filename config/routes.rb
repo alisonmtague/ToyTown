@@ -6,7 +6,8 @@ Rails.application.routes.draw do
 
 
 
-  root to: 'users#index'
+  root to: 'application#index'
+    # root to: 'sessions#create'
 
   resources :users do
   end

@@ -4,6 +4,11 @@ class SessionsController < ApplicationController
 		session[:user_id] = @user.id
 		redirect_to root_path
 	end
+	
+	def destroy
+		session[:user_id] = nil
+		redirect_to root_url, :notice => "Signed out!"
+	end
 
 	protected
 
@@ -11,8 +16,5 @@ class SessionsController < ApplicationController
 		request.env['omniauth.auth']
 	end
 
-	def destroy
-		session[:user_id] = nil
-		redirect_to root_url, :notice => "Signed out!"
-	end
+
 end
