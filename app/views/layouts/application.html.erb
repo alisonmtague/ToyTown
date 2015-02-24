@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ToyTown</title>
+  <title>Toy Town</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+	<% if current_user %> 
+		<p class="navbar-text navbar-right">Signed in as <%= current_user.name %></p>
+	<%end%>
 
 <%= yield %>
 
