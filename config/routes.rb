@@ -4,7 +4,12 @@ Rails.application.routes.draw do
   get '/auth/failure', to: redirect('/')
   get '/signout' => 'sessions#destroy', :as => :signout
 
+  get '/whatsnew', to: 'application#whatsnew'
 
+  get '/visit', to: 'application#visit'
+
+  get '/wishlist', to: 'wishlists#index'
+  resources :wishlists
 
   root to: 'application#index'
     # root to: 'sessions#create'
