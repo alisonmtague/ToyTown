@@ -1,13 +1,21 @@
  class WishlistsController < ApplicationController
 	def index
-		@wishlists = Wishlist.all
-		# @wishlists = @current_user.wishlists.all
-		# @wishlist = Wishlist.new(:user => @current_user)
+
+		# if current_user == Wishlist.find(params[user_id])
+		# 	Wishlist.user_id
+		# end
+
+
+
+		@wishlists = Wishlist.where(user_id: current_user.id)
+		# @current_user = User.find(params[:id])
+		# @wishlists = Wishlist.find(params[current_user])
+# if current id = wishlist user_id then display wishlist
 	end
 
 	def show
-		return params
-		@wishlist.title = Wishlist.title.find(params[:title])
+		@wishlist = Wishlist.find(params[:id])
+
 	end
 
 end

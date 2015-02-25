@@ -8,11 +8,10 @@ Rails.application.routes.draw do
 
   get '/visit', to: 'application#visit'
 
-  get '/wishlist', to: 'wishlists#index'
-  resources :wishlists
 
-  get '/wishlist', to: 'wishlists#show'
   resources :wishlists
+  resources :items
+
 
   root to: 'application#index'
     # root to: 'sessions#create'
