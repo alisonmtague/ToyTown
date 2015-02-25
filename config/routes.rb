@@ -11,6 +11,9 @@ Rails.application.routes.draw do
   get '/wishlist', to: 'wishlists#index'
   resources :wishlists
 
+  get '/wishlist', to: 'wishlists#show'
+  resources :wishlists
+
   root to: 'application#index'
     # root to: 'sessions#create'
 

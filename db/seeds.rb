@@ -5,11 +5,19 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Wishlist.delete_all
+Item.delete_all
 
-Wishlist.create(title: 'Christmas', item: 'rubix', description: 'square', user_id: 3)
+Wishlist.create(title: 'Christmas', user_id: 1)
 
-Wishlist.create(title: 'Christmas', item: 'rubber duck', description: 'pink', user_id: 3)
+Wishlist.create(title: 'Christmas', user_id: 1)
 
-Wishlist.create(title: 'Birthday', item: 'model car', description: 'shiney', user_id: 3)
+Wishlist.create(title: 'Birthday', user_id: 1)
 
-Wishlist.create(title: 'Birthday', item: 'pony', description: 'white', user_id: 5)
+Wishlist.create(title: 'Birthday', user_id: 2)
+#christmas:
+Item.create(item_name: 'rubix', description: 'square', wishlist_id: 29)
+Item.create(item_name: 'rubber duck', description: 'pink', wishlist_id: 29)
+#birthday
+Item.create(item_name: 'model car', description: 'shiney', wishlist_id: 30)
+Item.create(item_name: 'pony', description: 'white', wishlist_id: 30)
