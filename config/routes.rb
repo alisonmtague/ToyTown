@@ -21,8 +21,9 @@ Rails.application.routes.draw do
   get '/visit', to: 'application#visit'
 
 
-  resources :wishlists
-  resources :items
+  resources :wishlists do
+    resources :items
+  end
 
 
   root to: 'application#index'

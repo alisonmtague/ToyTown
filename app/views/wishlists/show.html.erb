@@ -1,8 +1,9 @@
 <h2><%= @wishlist.title %></h2><h2> Wishlist</h2>
 
-<ul><% @wishlist.items.each do |item| %>
+<ul><% @items.each do |item| %>
 	<li><%= item.item_name %>
 	<%= item.description %></li>
 <%end%></ul>
 
+<%= render '/items/new' %>
 <%= link_to 'back to wishlists', wishlists_path %>
