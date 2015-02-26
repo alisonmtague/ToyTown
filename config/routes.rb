@@ -16,7 +16,9 @@ Rails.application.routes.draw do
   # resources :popular_toys, only: [:index]
   # get 'popular_toys/vote'
 
+
   get '/whatsnew', to: 'application#whatsnew'
+  #get '/whatsnew', to: 'https://instagram.com/'
 
   get '/visit', to: 'application#visit'
 

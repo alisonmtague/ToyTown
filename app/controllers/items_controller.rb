@@ -11,7 +11,7 @@ class ItemsController < ApplicationController
 		if @item.save
 			redirect_to wishlist_path(@item.wishlist)
 		else
-			redirect_to :new
+			redirect_to wishlist_path
 		end
 	end
 
