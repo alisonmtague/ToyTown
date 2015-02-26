@@ -1,0 +1,4 @@
+<%= link_to 'like', vote_path(@popular_toy), class: 'vote', remote: true %>
+<ul><% @popular_toys.each do |pt| %>
+  <li><%= pt.name %>
+<%end%></ul>

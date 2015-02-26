@@ -10,7 +10,7 @@
 	def destroy
 		@wishlist = Wishlist.find(params[:id])
 		@wishlist.destroy
-		redirect_to wishlist_path
+		redirect_to wishlists_path
 	end
 
 	def new
