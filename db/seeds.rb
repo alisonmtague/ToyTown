@@ -17,11 +17,11 @@ Wishlist.create(title: 'Birthday', user_id: 1)
 
 Wishlist.create(title: 'Birthday', user_id: 2)
 #christmas:
-Item.create(item_name: 'rubix', description: 'square', wishlist_id: 29)
-Item.create(item_name: 'rubber duck', description: 'pink', wishlist_id: 29)
+Item.create(item_name: 'rubix', description: 'square', wishlist_id: 42)
+Item.create(item_name: 'rubber duck', description: 'pink', wishlist_id: 42)
 #birthday
-Item.create(item_name: 'model car', description: 'shiney', wishlist_id: 30)
-Item.create(item_name: 'pony', description: 'white', wishlist_id: 30)
+Item.create(item_name: 'model car', description: 'shiney', wishlist_id: 43)
+Item.create(item_name: 'pony', description: 'white', wishlist_id: 42)
 
 PopularToy.create(name: 'Star Wars Lego')
 PopularToy.create(name: 'Rainbow Loom')
