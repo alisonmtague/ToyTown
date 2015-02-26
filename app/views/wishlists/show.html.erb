@@ -1,10 +1,8 @@
 <h2><%= @wishlist.title %></h2><h2> Wishlist</h2>
 
-<% @wishlist.items.each do |item| %>
-	<%= item.item_name %>
-	<%= item.description %>
-	<%= link_to 'delete item', items_path %>
-<%end%>
+<ul><% @wishlist.items.each do |item| %>
+	<li><%= item.item_name %>
+	<%= item.description %></li>
+<%end%></ul>
 
 <%= link_to 'back to wishlists', wishlists_path %>
-<!-- current_user.id -->

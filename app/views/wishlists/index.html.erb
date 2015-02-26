@@ -1,6 +1,7 @@
 WISHLIST INDEX
 
-<% @wishlists.each do |wishlist| %>
-  <%= link_to wishlist.title, wishlist_path(wishlist) %>
-<%end%>
+<ul><% @wishlists.each do |wishlist| %>
+  <li><%= link_to wishlist.title, wishlist_path(wishlist) %>
+	<%= link_to 'delete wishlist', wishlist, method: :delete %></li> 
+<%end%></ul>
 
