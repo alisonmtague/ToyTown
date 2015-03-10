@@ -5,26 +5,27 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="normalize.css" />
+  
 </head>
 <body>
-	<div class='nav'>
-		<h1 id='title'>Toy Town</h1>
-<!-- 		<img src='././assets/images/Toy_Town.00_png_srz'> -->
-		<ul class='login_section'>
+	<nav>
+		<div class="image"></div>
+		<h1 id='tt-title'>Toy Town</h1>
+
+		<ul class='login-section'>
 			<% if !current_user %> 
 				<%= link_to 'Sign in with Twitter', '/auth/twitter' %>
 			<%end%>
-
 			<% if current_user %> 
 				<p class="navbar-text navbar-right">Signed in as <%= current_user.name %></p>
 			<%end%>
-
 			<% if current_user %> 
 				<%= link_to 'Log out with Twitter', signout_path %>
-			<%end%> 
-
+			<%end%>
 		</ul>
-		<ul class='nav_links'>
+
+		<ul class='nav-links'>
 			<li><%= link_to 'Popular Toys', popular_toys_path %></li>
 			<li><%= link_to 'Whats New', whatsnew_path %></li>
 			<li><%= link_to 'Visit Us', visit_path %></li>
@@ -32,7 +33,7 @@
 				<li><%= link_to 'Wishlist', wishlists_path %></li>
 			<%end%>
 		</ul>
-	</div>
+	</nav>
 
 <%= yield %>
 
