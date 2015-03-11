@@ -10,10 +10,11 @@
 </head>
 <body>
 	<nav>
-		<div class="image"></div>
+		<%= image_tag("toytown.jpg", :alt=>"Toy Town", :class => "main_logo")%>
+<!-- 		<div class="image"></div>
 		<h1 id='tt-title'>Toy Town</h1>
-
-		<ul class='login-section'>
+ -->
+		<div class='login-section'>
 			<% if !current_user %> 
 				<%= link_to 'Sign in with Twitter', '/auth/twitter' %>
 			<%end%>
@@ -23,16 +24,17 @@
 			<% if current_user %> 
 				<%= link_to 'Log out with Twitter', signout_path %>
 			<%end%>
-		</ul>
-
-		<ul class='nav-links'>
-			<li><%= link_to 'Popular Toys', popular_toys_path %></li>
-			<li><%= link_to 'Whats New', whatsnew_path %></li>
-			<li><%= link_to 'Visit Us', visit_path %></li>
-			<% if current_user %> 
-				<li><%= link_to 'Wishlist', wishlists_path %></li>
-			<%end%>
-		</ul>
+		</div>
+		<div class="nav">
+			<ul>
+				<li><%= link_to 'Popular Toys', popular_toys_path %></li>
+				<li><%= link_to 'Whats New', whatsnew_path %></li>
+				<li><%= link_to 'Visit Us', visit_path %></li>
+				<% if current_user %> 
+					<li><%= link_to 'Wishlist', wishlists_path %></li>
+				<%end%>
+			</ul>
+		</div>
 	</nav>
 
 <%= yield %>

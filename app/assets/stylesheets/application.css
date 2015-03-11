@@ -21,22 +21,21 @@ html {
 }
 
 nav {
-	background-color: blue;
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	height: 5em;
+	height: 11.5em;
 	margin-bottom: 5em;
+	border-bottom: 1em solid pink;
 }
-/*div.image {
-	background-image:url('../images/TOYTOWN.png');
-}​*/
-#tt-title{
-	margin: 0;
+.main_logo{
+	position:absolute;
+	margin: 7px 0 0 5px;
+	width: 30em;
+	height: 12em;
 	display: inline-block;
-	color: white;
-/*  content:url('../images/TOYTOWN.png');*/
 }
+
 nav .login-section{
 	float: right;
 	padding-left: 0;
@@ -44,25 +43,46 @@ nav .login-section{
 }
 
 .navbar-text{
-	margin: 0;
+	margin: 0 10px 0 0;
+	right:10px;
 }
 
 nav .login-section a{
-	color: white;
+	color: blue;
 	text-decoration: none;
+	position:absolute;
+	right: 10px;
 }
 
-nav .nav-links{
+nav .nav ul{
 	padding-left: 0;
-	margin: 0;
+	margin: 130px 10px 0 0;
+	float: right;
+	position: absolute;
+	right: 10px;
+}
+
+nav .nav li{
+	display: inline-block;
+/*	font-family: 'Oswald', sans-serif;*/
+	font-size: 1.5em;
+	line-height: 40px;
+	height: 40px;
+	border-bottom: 1px solid black;
 
 }
-nav .nav-links li{
-	display: inline;
-}
-nav .nav-links a{
-	color: white;
+nav .nav a{
+	color: navy;
 	text-decoration: none;
+	padding: 0 2px 0 2px;
+	font-family: 'Oswald', sans-serif;
+	float:right;
+	display:block;
+	transition: .3s background-color;
+}
+
+nav .nav a:hover{
+	background-color: yellow;
 }
 
 
