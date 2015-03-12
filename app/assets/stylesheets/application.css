@@ -11,8 +11,11 @@
  * file per style scope.
  *
  *= require_tree .
+ *= require font-awesome
  *= require_self
  */
+
+
 html {
   box-sizing: border-box;
 }
@@ -27,6 +30,7 @@ nav {
 	height: 11.5em;
 	margin-bottom: 5em;
 	border-bottom: 1em solid navy;
+	background-color: white;
 }
 .main_logo{
 	position:absolute;
@@ -45,6 +49,7 @@ nav .login-section{
 .navbar-text{
 	margin: 0 10px 0 0;
 	right:10px;
+	font-family: 'News Cycle', sans-serif;
 }
 
 nav .login-section a{
@@ -52,6 +57,7 @@ nav .login-section a{
 	text-decoration: none;
 	position:absolute;
 	right: 10px;
+	font-family: 'News Cycle', sans-serif;
 }
 
 nav .nav ul{
@@ -89,19 +95,134 @@ nav .nav li:hover{
 }
 
 @media screen and (max-width: 884px) {
-	.nav ul {
-		display:inline-block;
-		width:100%;
-		margin:0;
+	nav {
+		margin: 0 20 0 0;
+		padding: 0;
+		width: 100%;
+		height: 7.4em;
+		border-bottom: .5em solid navy;
 	}
-	.nav li {
-		background-color: green;
-		display:inline-block;
-		width:100%;
-		margin:0;
+	.main_logo{
+		width: 20em;
+		height: 8em;
+		display: inline-block;
+	}
+	nav .nav ul{
+		padding-left: 0;
+		margin: 65px 10px 0 0;
+		float: right;
+	}
+	nav .nav li{
+		display: inline-block;
+		font-size: 1.3em;
+		line-height: 55px;
+		height: 40px;
+/*		background-color: green;*/
+	}
+	nav .nav a{
+		color: navy;
+		text-decoration: none;
+		padding: 0 2px 0 2px;
+		float:right;
+		display:block;
+	/*	transition: .25s background-color;*/
+		font-family: 'News Cycle', sans-serif;
+		font-weight: bold;
+	}
+	nav .nav a:hover{
+		background-color: yellow;
+		color:blue;
+	}
+	nav .nav li:hover{
+		border-bottom: .5em solid blue;
 	}
 }
 
+@media screen and (max-width: 700px) {
+	nav {
+		margin: 0 0 220px 0;
+		padding: 0;
+		width: 100%;
+		height: 7em;
+		border-bottom: .5em solid navy;
+	}
+	.main_logo{
+		position:static;
+		margin:auto;
+		margin-left: 10%;
+		width:315px;
+
+	}
+	nav .login-section{
+/*		position:static;*/
+/*		padding-left: 0;*/
+/*		margin: 0;*/
+	}
+
+	nav .login-section {
+		display:inline-block;
+		width:100%;
+/*		margin:0 0 20 0;*/
+/*		text-align: center;*/
+		background-color: silver;
+	}
+
+	nav .login-section p{
+/*		position:static;*/
+		display: inline-block;
+/*		margin:auto;*/
+/*		margin: 0 10px 0 0;*/
+/*		right:10px;*/
+		margin-left: 15%;
+	}
+
+	nav .login-section a{
+		color: blue;
+		text-decoration: none;
+		position:absolute;
+		right: auto;
+	}
+	nav .nav ul {
+		display:inline-block;
+		position:relative;
+		width:100%;
+		padding:0;
+		margin:0;
+		text-align: center;
+		right:auto;
+
+	}
+	nav .nav li {
+		background-color: navy;
+		display:inline-block;
+		width:100%;
+		margin:0;
+		line-height: normal;
+		height: auto;
+		border-bottom: 1px solid white;
+	}
+	nav .nav a{
+		color: white;
+		text-decoration: none;
+/*		padding: 0;
+		float:right;
+		display:block;*/
+	/*	transition: .25s background-color;*/
+		float:none;
+		font-family: 'News Cycle', sans-serif;
+		font-weight: bold;
+		display: block;
+	}
+
+	nav .nav a:hover{
+		color:blue;
+	}
+	nav .nav li:hover{
+		border-bottom: none;
+		background-color: yellow;
+		border-bottom: 2px solid blue;
+	}
+}
 
 
 

@@ -1,9 +1,13 @@
-<h2><%= @wishlist.title %></h2><h2> Wishlist</h2>
+<div class="box">
+	<div class="box-content">
+		<h2 id="custom-name"><%= @wishlist.title %></h2><h2> Wishlist</h2>
 
-<ul><% @items.each do |item| %>
-	<li><%= item.item_name %>
-	<%= item.description %></li>
-<%end%></ul>
+		<ul class="custom-list"><% @items.each do |item| %>
+			<li class="item"><i class="fa fa-gift"></i><%= item.item_name %>
+			<%= item.description %></li>
+		<%end%></ul>
 
-<%= render '/items/new' %>
-<%= link_to 'back to wishlists', wishlists_path %>
+		<%= render '/items/new' %>
+		<%= link_to 'back to wishlists', wishlists_path %>
+	</div>
+</div>

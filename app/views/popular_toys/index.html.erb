@@ -1,8 +1,13 @@
-<ul>
-	<% @popular_toys.each do |pt| %>
-  	<li>
-  		<%= pt.name %>  
-  		<%= link_to "upvote", like_popular_toy_path(pt), method: :put %><%= pt.score %>
-  	</li>
-	<%end%>
-</ul>
+<div class="box">
+	<div class="box-content">
+		<h1 class="title">Popular Toys</h1>
+			<ul class="poptoys">
+				<% @popular_toys.each do |pt| %>
+			  	<li>
+			  		<%= pt.name %>  
+			  		<%= link_to "upvote", like_popular_toy_path(pt), method: :put %><%= pt.score %>
+			  	</li>
+				<%end%>
+			</ul>
+	</div>
+</div>

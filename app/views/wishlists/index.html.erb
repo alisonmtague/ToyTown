@@ -1,10 +1,11 @@
-WISHLIST INDEX
+<div class="box">
+	<div class="box-content">
+		<h1 class="title">Create a Wishlist</h1>
+			<ul><% @wishlists.each do |wishlist| %>
+			  <li><%= link_to wishlist.title, wishlist_path(wishlist) %>
+				<%= link_to 'delete wishlist', wishlist, method: :delete %></li> 
+			<%end%></ul>
 
-<ul><% @wishlists.each do |wishlist| %>
-  <li><%= link_to wishlist.title, wishlist_path(wishlist) %>
-	<%= link_to 'delete wishlist', wishlist, method: :delete %></li> 
-<%end%></ul>
-
-<%= render 'new' %>
-<%#= link_to 'Create a New Wishlist', new_wishlist_path %>
-
+			<%= render 'new' %>
+	</div>
+</div>

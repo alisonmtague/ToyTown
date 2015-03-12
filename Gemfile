@@ -11,6 +11,8 @@ gem 'omniauth-twitter'
 gem 'twitter', '~> 5.13.0'
 # allow users to vote
 gem 'acts_as_votable', '~> 0.10.0' 
+# font-awesome sass gem
+gem 'font-awesome-sass'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets

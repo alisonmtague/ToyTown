@@ -6,15 +6,14 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <link rel="stylesheet" href="normalize.css" />
+<!--   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
   <link href='http://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css'>
-  
+  <link href='http://fonts.googleapis.com/css?family=Codystar' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Henny+Penny' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<nav>
-		<%= image_tag("toytown.jpg", :alt=>"Toy Town", :class => "main_logo")%>
-<!-- 		<div class="image"></div>
-		<h1 id='tt-title'>Toy Town</h1>
- -->
+		<%= link_to image_tag("toytown.jpg", :alt=>"Toy Town", :class => "main_logo") %>
 		<div class='login-section'>
 			<% if !current_user %> 
 				<%= link_to 'Sign in with Twitter', '/auth/twitter' %>
