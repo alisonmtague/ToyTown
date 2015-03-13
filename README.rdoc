@@ -18,4 +18,4 @@ User Stories
 
 ERD
 
-
+<img src="app/assets/images/erd.png" alt="erd">
