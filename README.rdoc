@@ -1,14 +1,11 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Toy Town is an app I created for a small business. It is a site that allows users to sign in if they wish to create wishlists and also have the capability to vote for their favorite popular toys. 
 
-Things you may want to cover:
+Technologies used:
 
-* Ruby version
-
-* System dependencies
-
+* Ruby 2.1.2p95
+* Postgresql
 * Configuration
 
 * Database creation
