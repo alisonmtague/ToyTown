@@ -67,6 +67,7 @@ h2 {
 	font-family: 'Henny Penny', sans-serif;
 	font-size: 3em;
 	margin: .5em 0 .2em 0;
+	color: navy;
 }
 
 #custom-name{
@@ -85,8 +86,32 @@ h2 {
 	padding-left: 10px;
 }
 
+.ttmap {
+	padding-left: 50px;
+	margin-bottom: 50px;
+	width: 60%;
+}
 
+#contact{
+	font-family: 'News Cycle', sans-serif;
+	font-weight: bold;
+}
 
+#address{
+	font-family: 'News Cycle', sans-serif;
+	font-weight: bold;
+}
+
+.visit-boxes{
+	background-color: silver;
+	border-radius: 50px;
+	margin-bottom: 8%;
+}
+
+.visit-us{
+	float:right;
+	margin-right: 40px;
+}
 
 
 

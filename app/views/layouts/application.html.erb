@@ -13,7 +13,7 @@
 </head>
 <body>
 	<nav>
-		<%= link_to image_tag("toytown.jpg", :alt=>"Toy Town", :class => "main_logo") %>
+		<%= link_to image_tag("toytown.jpg", :alt=>"Toy Town", :class => "main_logo"), '/' %>
 		<div class='login-section'>
 			<% if !current_user %> 
 				<%= link_to 'Sign in with Twitter', '/auth/twitter' %>

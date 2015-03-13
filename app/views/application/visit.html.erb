@@ -6,7 +6,23 @@
 		<link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
 </head>
 <body>
-	<div id="map"></div>
+	<%= link_to image_tag("map.png", :alt=>"map", :class => "ttmap") %>
+	<div class="visit-us">
+		<div class="visit-boxes">
+			<div class="box-content">
+				<h1 class="title">Come Visit Us!</h1>
+				<p id="address">260 Crandon Blvd, suite #43</p>
+				<p id="address">Key Biscayne, FL 33149</p>
+			</div>
+		</div>
+		<div class="visit-boxes">
+			<div class="box-content">
+				<h1 class="title">Contact Us!</h1>
+				<p id="contact">phone: 305-361-5501</p>
+				<p id="contact">email: toytownkb@gmail.com</p>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
 
