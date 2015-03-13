@@ -1,28 +1,21 @@
-== README
+== Toy Town
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Toy Town is an app I created for a small business. It is a site that allows users to sign in if they wish to create wishlists and also have the capability to vote for their favorite popular toys. 
 
-Things you may want to cover:
+Technologies used:
 
-* Ruby version
+* Ruby 2.1.2p95
+* Postgresql
+* OmniAuth for Twitter
+* Acts as votable
 
-* System dependencies
+User Stories
+* User can access the site without sign in
+* User can sign in with Twitter
+    - User can create wishlists
+    - User can vote on toys
+* User can navigate pages
 
-* Configuration
+ERD
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+<img src="app/assets/images/erd.png" alt="erd">
