@@ -1,4 +1,4 @@
-== README
+== Toy Town
 
 Toy Town is an app I created for a small business. It is a site that allows users to sign in if they wish to create wishlists and also have the capability to vote for their favorite popular toys. 
 
@@ -6,20 +6,16 @@ Technologies used:
 
 * Ruby 2.1.2p95
 * Postgresql
-* Configuration
+* OmniAuth for Twitter
+* Acts as votable
 
-* Database creation
+User Stories
+* User can access the site without sign in
+* User can sign in with Twitter
+    - User can create wishlists
+    - User can vote on toys
+* User can navigate pages
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ERD
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
