@@ -3,11 +3,13 @@
 		<h2 id="custom-name"><%= @wishlist.title %></h2><h2> Wishlist</h2>
 
 		<ul class="custom-list"><% @items.each do |item| %>
-			<li class="item"><i class="fa fa-gift"></i><%= item.item_name %>
+			<li class="item"><i class="fa fa-gift"></i><%= item.item_name %>: 
 			<%= item.description %></li>
 		<%end%></ul>
-
+<%#= link_to 'delete item', item, method: :delete %>
 		<%= render '/items/new' %>
-		<%= link_to 'back to wishlists', wishlists_path %>
+		<i class="fa fa-arrow-circle-o-left"></i>  <%= link_to 'back to wishlists', wishlists_path %>
 	</div>
 </div>
+
+<!-- <i class="fa fa-trash-o"></i>

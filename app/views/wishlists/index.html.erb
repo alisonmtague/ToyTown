@@ -2,10 +2,13 @@
 	<div class="box-content">
 		<h1 class="title">Create a Wishlist</h1>
 			<ul><% @wishlists.each do |wishlist| %>
-			  <li><%= link_to wishlist.title, wishlist_path(wishlist) %>
-				<%= link_to 'delete wishlist', wishlist, method: :delete %></li> 
+			  <li><%= link_to 'delete wishlist', wishlist, method: :delete %><%= link_to wishlist.title, wishlist_path(wishlist) %>
+				</li> 
 			<%end%></ul>
 
 			<%= render 'new' %>
 	</div>
 </div>
+
+<!-- <i class="fa fa-trash-o"></i>
+<i class="fa fa-pencil-square-o"></i> -->

@@ -3,7 +3,7 @@
 
 
 html {
-	background-color: blue;
+	background-color: #064A89;
 }
 .box{
 	background-color: silver;
@@ -17,11 +17,17 @@ html {
 }
 .title{
 	font-family: 'Codystar', cursive;
+	color:navy;
 }
 
 #new{
-	color:white;
-	padding-left:40px;
+	color:navy;
+/*	padding-left:40px;*/
+	margin: 0 0 20px 20px;
+	background-color: silver;
+	padding: 5px 5px 5px 5px;
+	border-radius: 10px;
+	width: 7em;
 }
 .info p{
 	font-family: 'News Cycle', sans-serif;
@@ -35,18 +41,24 @@ html {
 }
 
 .poptoys li{
-	background-color: blue;
+	background-color: navy;
 /*	margin:1px;*/
 /*	padding-left: 0;*/
 		padding:10px;
 		margin:0 0 5px 0;
 		list-style-type:none;
 		border-radius: 20px;
+		font-family: 'News Cycle', sans-serif;
+		color: white;
 }
+
+.poptoys li a{
+		color: yellow;
+		padding-right: 5px;
+}
+
 .instagram{
 	margin: 0 20px 0 20px;
-	border:20px solid blue;
-	border-bottom: none;
 }
 
 h2 {
@@ -54,6 +66,7 @@ h2 {
 	padding: 0 .5em 0 0;
 	font-family: 'Henny Penny', sans-serif;
 	font-size: 3em;
+	margin: .5em 0 .2em 0;
 }
 
 #custom-name{
@@ -61,10 +74,18 @@ h2 {
 }
 
 .item{
-/*	<i class="fa fa-gift"></i>*/
-/*	list-style-image: url(arrow.gif);*/
 	list-style-type: none;
 }
+
+.item i{
+	padding-right: 1em;
+}
+
+.custom-list{
+	padding-left: 10px;
+}
+
+
 
 
 
